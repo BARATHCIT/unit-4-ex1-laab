@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1 class="head">HEAD of the page </h1>
+    <p class="paragraph">Paragraph of the page </p>
+    <button onclick="contentChange()">Change the content</button>
+</body>
+<script>
+    const contentChange = () => {
+       const headerElements = document.getElementsByClassName("head");
+
+       for(let i=0;i < headerElements.length; i++){
+        headerElements[i].textContent=`HEAD ${i+1} `;
+          }
+          const paragraphElements = document.getElementsByClassName("paragraph");
+          for(let i = 0; i <paragraphElements.length, i++){
+            paragraphElements[i].textContent=`Paragraph ${i+1}content.`;
+
+          }
+    }; 
+        
+</script>
+</body>
+</html>
